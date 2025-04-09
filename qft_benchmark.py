@@ -1,6 +1,6 @@
 # %%
 import pennylane as qml
-from pennylane import numpy as np
+import numpy as np
 from timeit import timeit
 from memory_profiler import memory_usage
 import matplotlib.pyplot as plt
@@ -16,6 +16,10 @@ def qft(wires):
         for j in range(i + 1, num_qubits):
             angle = np.pi / (2 ** (j - i))
             qml.ControlledPhaseShift(phi=angle, wires=[wires[j], wires[i]])
+
+    # Reverse the order of the qubits to match PennyLane's native QFT
+    for i in range(num_qubits // 2):
+        qml.SWAP(wires=[wires[i], wires[num_qubits - i - 1]])
 
 
 def qft_wrapper(num_qubits):
@@ -140,5 +144,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# %%
