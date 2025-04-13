@@ -1,6 +1,6 @@
 #QFT-Benchmark-Pennylane
 
-This repository contains a Jupyter Notebook that implements the Quantum Fourier Transform (QFT) algorithm and its corresponding circuit using the PennyLane library. It compares the performance of QFT in terms of time and memory usage between the PennyLane implementation and a manual implementation.
+This repository contains a Jupyter Notebook that implements the Quantum Fourier Transform (QFT) algorithm and its corresponding circuit using the PennyLane library. It compares the performance of QFT in terms of time and memory usage.
 
 ## File
 
