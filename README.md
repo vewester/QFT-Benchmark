@@ -28,5 +28,5 @@ Running the first cell in the notebook will install the following dependencies:
 1. Clone the repository: `git clone https://github.com/vewester/QFT-Benchmark.git`
 2. Navigate into the project folder: `cd QFT-Benchmark`
 3. Launch the notebook:
-  - JupyterLab: `jupyter lab`
-  - Jupyter Notebook: `jupyter notebook`
+   - JupyterLab: `jupyter lab`
+   - Jupyter Notebook: `jupyter notebook`
