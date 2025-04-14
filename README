@@ -1,36 +1,35 @@
-#QFT-Benchmark-Pennylane
+# QFT-Benchmark
 
-This repository contains a Jupyter Notebook that implements the Quantum Fourier Transform (QFT) algorithm and its corresponding circuit using the PennyLane library. It compares the performance of QFT in terms of time and memory usage between the PennyLane implementation and a manual implementation.
+This repository contains a Jupyter notebook that implements the Quantum Fourier Transform (QFT) algorithm and its corresponding circuit using the PennyLane library. It compares the performance of QFT in terms of time and memory usage between the PennyLane implementation and a manual implementation.
 
 ## File
 
-- `qft_benchmark.ipynb` — Main Jupyter Notebook for this project.
+- `qft_benchmark.ipynb` — Main Jupyter notebook for this project.
 
 ## Requirements
 
 To run the notebook, you will need:
 
-- Python 3.x  
-- Jupyter Notebook or JupyterLab  
-- Required libraries:
-  - pennylane
-  - pandas  
-  - numpy  
-  - timeit
-  - matplotlib  
+- Python 3.x
+- An IDE that supports Jupyter notebooks, such as:
+  - VSCode with Jupyter extension
+  - Jupyter Notebook
+  - JupyterLab
+  - Google Colab
 
-You can install dependencies using:
-%pip install pennylane pandas numpy matplotlib memory_profiler
+Running the first cell in the notebook will install the following dependencies:
+- pennylane
+- pandas
+- numpy
+- matplotlib
+- memory_profiler
 
-Or manually:
-pip install pandas numpy matplotlib
-
-How to Run
+How to Run (Jupyter Notebook)
 1. Clone the repository:
   git clone https://github.com/vewester/QFT-Benchmark.git
 
 2. Navigate into the project folder:
-  cd your-repo-name
+  cd QFT-Benchmark
 
 3. Launch the notebook:
-  jupyter notebook qft_benchmark.ipynb
+  jupyter notebook
